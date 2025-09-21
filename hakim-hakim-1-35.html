@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakim 1:35 - Keadilan dan Kebenaran Ilahi</title>
+    <link rel="icon" href="/favicon.svg">
+    <style>
+        :root {
+            --color-primary: #64b5f6; /* Biru cerah */
+            --color-secondary: #81c784; /* Hijau cerah */
+            --color-text-dark: #333;
+            --color-text-light: #f5f5f5;
+            --font-family-body: 'Roboto', sans-serif;
+            --font-family-heading: 'Montserrat', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family-body);
+            margin: 0;
+            padding: 20px;
+            background-color: var(--color-primary);
+            color: var(--color-text-dark);
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 768px;
+            width: 100%;
+            background-color: var(--color-text-light);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        h1 {
+            font-family: var(--font-family-heading);
+            color: var(--color-secondary);
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            text-align: center;
+            border-bottom: 2px solid var(--color-secondary);
+            padding-bottom: 15px;
+        }
+
+        h2 {
+            font-family: var(--font-family-heading);
+            color: var(--color-text-dark);
+            font-size: 1.6em;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        .verse {
+            font-style: italic;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #e3f2fd; /* Warna latar ayat lebih muda */
+            border-left: 5px solid var(--color-primary);
+            border-radius: 0 8px 8px 0;
+            color: var(--color-text-dark);
+            font-size: 1.2em;
+        }
+
+        img.main-image {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-height: 300px; /* Batasi tinggi gambar */
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            background-color: #e0e0e0; /* Warna latar sementara jika SVG belum dimuat */
+        }
+
+        .credit {
+            font-size: 0.8em;
+            text-align: center;
+            margin-top: 20px;
+            color: #777;
+        }
+
+        /* Media query untuk mobile responsiveness */
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            .verse {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+    <!-- Font Google untuk tampilan yang lebih modern -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+        <!-- SVG Image -->
+        <svg class="main-image" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg" aria-label="Ilustrasi keadilan dan kebenaran ilahi">
+            <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#64b5f6;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#81c784;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect width="600" height="300" rx="8" ry="8" fill="url(#grad1)" />
+            <!-- Timbangan keadilan yang bersinar -->
+            <g transform="translate(300, 150) scale(1)">
+                <path d="M -80 0 L -70 -30 L -60 0 L -70 30 Z" fill="#fdd835" stroke="#f9a825" stroke-width="3"/>
+                <path d="M 80 0 L 70 -30 L 60 0 L 70 30 Z" fill="#fdd835" stroke="#f9a825" stroke-width="3"/>
+                <line x1="-80" y1="0" x2="80" y2="0" stroke="#f9a825" stroke-width="4"/>
+                <line x1="-25" y1="-40" x2="25" y2="-40" stroke="#f9a825" stroke-width="4"/>
+                <line x1="-25" y1="-40" x2="-25" y2="-10" stroke="#f9a825" stroke-width="4"/>
+                <line x1="25" y1="-40" x2="25" y2="-10" stroke="#f9a825" stroke-width="4"/>
+                <line x1="-50" y1="-60" x2="50" y2="-60" stroke="#f9a825" stroke-width="4"/>
+                <line x1="-50" y1="-60" x2="-50" y2="-30" stroke="#f9a825" stroke-width="4"/>
+                <line x1="50" y1="-60" x2="50" y2="-30" stroke="#f9a825" stroke-width="4"/>
+                <path d="M -40 -85 Q 0 -100 40 -85" stroke="#f9a825" stroke-width="4" fill="none"/>
+                <circle cx="0" cy="0" r="5" fill="#f9a825"/>
+            </g>
+            <!-- Simbol kedamaian dan kebenaran -->
+            <circle cx="100" cy="70" r="20" fill="#e0f2f1" stroke="#00796b" stroke-width="2"/>
+            <circle cx="500" cy="70" r="20" fill="#fff9c4" stroke="#fbc02d" stroke-width="2"/>
+            <text x="300" y="270" font-family="Montserrat" font-size="20" fill="#ffffff" text-anchor="middle">Keadilan Ilahi Terwujud</text>
+        </svg>
+
+        <h1>Hakim 1:35</h1>
+        <div class="verse">
+            "Tetapi orang Amori itu berkeras tinggal di atas bukit Daud, dan mereka tidak membiarkan orang Yehuda turun. Sebab itu orang Amori berkeras tinggal di Pegunungan... sampai hari itu."
+        </div>
+
+        <h2>Konteks Sejarah dan Makna Mendalam</h2>
+        <p>
+            Ayat Hakim 1:35 menggambarkan situasi yang penuh tantangan dan keteguhan dari suku Yehuda dalam menghadapi perlawanan sengit dari orang Amori. Kisah ini terukir dalam kitab Hakim, sebuah periode penting dalam sejarah Israel kuno yang penuh dengan pergulatan iman dan perjuangan mempertahankan tanah perjanjian. Ayat ini bukan sekadar catatan sejarah biasa, melainkan menyimpan makna teologis yang mendalam mengenai kedaulatan Allah, kesetiaan umat-Nya, dan perjuangan yang berkelanjutan untuk menegakkan kebenaran.
+        </p>
+        <p>
+            Fokus pada "orang Amori" menunjukkan adanya sisa-sisa populasi asli Kanaan yang masih menolak untuk tunduk atau diusir sepenuhnya dari tanah yang telah dijanjikan kepada bangsa Israel. Penolakan ini menciptakan konflik yang berkepanjangan, seperti yang disinggung dalam ayat ini, di mana orang Amori "berkeras tinggal" dan mencegah orang Yehuda untuk benar-benar menguasai wilayah mereka. Ini bisa diartikan sebagai ujian iman, di mana umat Allah harus terus berjuang melawan kekuatan-kekuatan yang menentang rencana dan kehendak ilahi.
+        </p>
+
+        <h2>Tantangan dalam Mendapatkan Kemerdekaan Penuh</h2>
+        <p>
+            Situasi yang digambarkan dalam Hakim 1:35 menyoroti bahwa pembebasan dan penguasaan tanah perjanjian bukanlah proses yang instan atau tanpa hambatan. Ada elemen-elemen yang terus berusaha mempertahankan kekuasaan mereka, menghalangi kemajuan dan penguasaan penuh oleh umat Allah. Frasa "tidak membiarkan orang Yehuda turun" mengindikasikan adanya blokade atau penolakan aktif yang menciptakan ketidakpastian dan kesulitan.
+        </p>
+        <p>
+            Dalam konteks spiritual, ini bisa melambangkan perjuangan pribadi kita melawan dosa, keraguan, atau pengaruh negatif yang mencoba mencegah kita untuk hidup dalam kebebasan yang telah dianugerahkan oleh Kristus. Seringkali, "orang Amori" dalam kehidupan kita adalah kebiasaan buruk yang sulit ditinggalkan, pemikiran yang meragukan janji Allah, atau tekanan dari dunia luar yang menghalangi pertumbuhan rohani kita. Frasa "sampai hari itu" memberikan harapan bahwa perjuangan ini memiliki tujuan akhir, yaitu kemenangan total dan pemulihan penuh yang akan terjadi pada waktunya.
+        </p>
+
+        <h2>Pelajarah tentang Ketekunan dan Keadilan Ilahi</h2>
+        <p>
+            Kisah ini mengajarkan kita tentang pentingnya ketekunan. Umat Yehuda tidak menyerah begitu saja, meskipun ada perlawanan yang kuat. Mereka terus berjuang, menunjukkan bahwa iman yang sejati seringkali membutuhkan daya juang dan kesabaran. Keadilan ilahi tidak selalu berarti kemenangan instan di dunia ini, tetapi kepastian bahwa Allah berpihak pada mereka yang berjuang untuk kebenaran-Nya.
+        </p>
+        <p>
+            Ayat ini juga mengingatkan bahwa rencana Allah seringkali terwujud melalui proses, bukan melalui keajaiban seketika yang menghilangkan semua tantangan. Ada tanggung jawab pada umat Allah untuk berperan aktif dalam mewujudkan janji-janji-Nya di bumi. Perlawanan dari orang Amori menjadi sebuah pengingat bahwa dunia seringkali menentang kehendak Tuhan, dan umat-Nya dipanggil untuk menjadi agen perubahan yang berani dan gigih. Kisah ini menginspirasi kita untuk terus teguh dalam iman, menghadapi tantangan dengan keberanian, dan percaya bahwa Allah akan memelihara keadilan-Nya pada akhirnya.
+        </p>
+
+        <div class="credit">Ilustrasi Keadilan dan Kebenaran Ilahi</div>
+    </div>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/2-raja-raja-13-18">2 Raja Raja 13 18</a></li>
+<li><a href="/yeremia-12-16">Yeremia 12 16</a></li>
+<li><a href="/ayub-35-1">Ayub 35 1</a></li>
+<li><a href="/1-raja-raja-17-5">1 Raja Raja 17 5</a></li>
+<li><a href="/yehezkiel-40-38">Yehezkiel 40 38</a></li>
+<li><a href="/mazmur-119-72">Mazmur 119 72</a></li>
+<li><a href="/mazmur-110-7">Mazmur 110 7</a></li>
+<li><a href="/kejadian-26-20">Kejadian 26 20</a></li>
+<li><a href="/1-raja-raja-8-55">1 Raja Raja 8 55</a></li>
+<li><a href="/1-tawarikh-12-12">1 Tawarikh 12 12</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

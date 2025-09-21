@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ulangan 2 17: Harapan dalam Kesulitan</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #e0f7fa; /* Warna latar belakang sejuk biru muda */
+            color: #004d40; /* Warna teks hijau tua untuk kontras */
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Mengatur alignment ke atas */
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: #ffffff; /* Latar belakang konten putih bersih */
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+        h1 {
+            color: #00796b; /* Warna judul lebih cerah */
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2.2em;
+            border-bottom: 2px solid #00796b;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #0097a7; /* Warna sub-judul cerah */
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-size: 1.6em;
+        }
+        p {
+            margin-bottom: 15px;
+            color: #004d40;
+        }
+        .ayat {
+            font-style: italic;
+            text-align: center;
+            margin-bottom: 25px;
+            color: #006064; /* Warna ayat lebih pekat */
+            font-size: 1.2em;
+            padding: 15px;
+            background-color: #b2ebf2; /* Latar belakang ayat lebih cerah */
+            border-radius: 8px;
+        }
+        .svg-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .svg-container svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            .ayat {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="svg-container">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title-desc">
+                <title id="title-desc">Ilustrasi pohon yang kokoh di tengah badai</title>
+                <defs>
+                    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#81d4fa;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#4fc3f7;stop-opacity:1" />
+                    </linearGradient>
+                    <linearGradient id="groundGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#a5d6a7;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#81c784;stop-opacity:1" />
+                    </linearGradient>
+                    <filter id="stormEffect">
+                        <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="3" result="turbulence"/>
+                        <feColorMatrix in="turbulence" type="matrix" values="1 0 0 0 0
+                                                                              0 1 0 0 0
+                                                                              0 0 1 0 0
+                                                                              0 0 0 15 -5"/>
+                        <feGaussianBlur stdDeviation="5" result="blur"/>
+                        <feComposite operator="in" in2="blur" result="storm"/>
+                        <feBlend mode="screen" in="storm" in2="SourceGraphic"/>
+                    </filter>
+                </defs>
+                <!-- Langit cerah dengan awan -->
+                <rect width="400" height="150" fill="url(#skyGradient)" />
+                <path d="M 50 50 Q 80 20, 100 70 Q 130 30, 150 90 Q 180 40, 200 110" fill="#ffffff" opacity="0.8"/>
+                <path d="M 220 80 Q 250 50, 280 100 Q 310 60, 340 120 Q 370 70, 390 130" fill="#ffffff" opacity="0.8"/>
+
+                <!-- Tanah subur -->
+                <rect y="150" width="400" height="50" fill="url(#groundGradient)" />
+
+                <!-- Pohon kokoh -->
+                <g filter="url(#stormEffect)">
+                    <path d="M 180 120 L 170 90 L 160 120 L 170 150 Z" fill="#795548" /> <!-- Batang bawah -->
+                    <path d="M 170 90 L 160 60 L 150 90 L 160 120 Z" fill="#795548" /> <!-- Batang tengah -->
+                    <path d="M 160 60 L 150 30 L 140 60 L 150 90 Z" fill="#795548" /> <!-- Batang atas -->
+                    <path d="M 140 60 Q 100 40, 120 0 L 160 60 Z" fill="#66bb6a" /> <!-- Daun kiri atas -->
+                    <path d="M 160 60 Q 200 40, 180 0 L 140 60 Z" fill="#81c784" /> <!-- Daun kanan atas -->
+                    <path d="M 120 0 Q 140 -20, 160 0" fill="#a5d6a7" /> <!-- Puncak daun -->
+                </g>
+
+                <!-- Kilat simulasi -->
+                <g fill="none" stroke="#fbc02d" stroke-width="2" opacity="0.7">
+                    <path d="M 180 50 L 190 20 L 185 50 Z" />
+                    <path d="M 190 20 L 200 0 L 195 20 Z" />
+                </g>
+            </svg>
+        </div>
+
+        <h1>Ulangan 2 17: Harapan dalam Kesulitan</h1>
+        <p class="ayat">
+            "Orang benar akan tumbuh subur seperti pohon kurma, berkembang seperti pohon aras di Libanon."
+        </p>
+
+        <h2>Memahami Konteks Ayat</h2>
+        <p>
+            Ayat dari Ulangan 2:17 ini, meskipun seringkali diinterpretasikan dalam konteks spiritual dan ketahanan iman, sejatinya merujuk pada situasi historis bangsa Israel. Pada masa itu, mereka sedang mengembara di padang gurun, sebuah periode penuh tantangan, ketidakpastian, dan kesulitan. Namun, dalam narasi tersebut, terselip sebuah janji dan gambaran tentang pertumbuhan yang tak terduga, sebuah ilustrasi ketahanan yang luar biasa di tengah keadaan yang paling tidak menguntungkan. Penggunaan metafora pohon kurma dan pohon aras memberikan gambaran yang kuat tentang kekuatan, pertumbuhan yang stabil, dan daya tahan yang luar biasa.
+        </p>
+
+        <h2>Ketahanan Seperti Pohon Kurma dan Aras</h2>
+        <p>
+            Pohon kurma dikenal sebagai pohon yang sangat produktif dan mampu bertahan dalam kondisi tanah yang kering dan panas ekstrem. Ia terus menghasilkan buah meskipun menghadapi kondisi alam yang sulit. Kemampuannya untuk menancapkan akarnya jauh ke dalam tanah untuk mencari sumber air menjadikannya simbol ketangguhan dan keberlangsungan hidup. Di sisi lain, pohon aras Libanon adalah simbol kekuatan, kemuliaan, dan umur panjang. Kayunya yang kokoh dan tahan lama, serta ukurannya yang megah, menjadikannya sebagai pohon yang dihormati dan seringkali dikaitkan dengan kekayaan serta stabilitas.
+        </p>
+        <p>
+            Perbandingan ini memberikan pesan yang mendalam. Ketika kita menghadapi masa-masa sulit, seperti pengembaraan bangsa Israel, kita diingatkan bahwa pertumbuhan dan keberhasilan bukanlah hal yang mustahil. Bahkan, di tengah kesulitanlah, kita dapat menemukan kekuatan untuk berakar lebih dalam, bertahan lebih lama, dan akhirnya tumbuh subur. Ayat ini bukan hanya tentang bertahan hidup, tetapi juga tentang berkembang dan mencapai kematangan di tengah badai kehidupan.
+        </p>
+
+        <h2>Aplikasi dalam Kehidupan Modern</h2>
+        <p>
+            Dalam dunia yang serba cepat dan seringkali penuh tekanan ini, kita semua pasti pernah atau akan mengalami masa-masa sulit. Entah itu tantangan dalam karir, masalah pribadi, atau situasi global yang tidak pasti, kita sering merasa seperti sedang mengembara di padang gurun. Namun, ayat ini menawarkan sebuah perspektif yang berbeda. Alih-alih melihat kesulitan sebagai akhir dari segalanya, kita dapat memandangnya sebagai kesempatan untuk memperkuat fondasi kita.
+        </p>
+        <p>
+            Seperti pohon kurma yang mencari air di kedalaman tanah, kita didorong untuk mencari sumber kekuatan spiritual, emosional, dan mental kita. Ini bisa berarti memperdalam hubungan dengan Tuhan, mencari dukungan dari orang-orang terkasih, mengembangkan keterampilan baru, atau mempraktikkan ketahanan mental. Pertumbuhan seperti pohon aras menyiratkan perkembangan yang kokoh dan berkelanjutan. Ini adalah tentang membangun karakter yang kuat, integritas, dan memberikan kontribusi yang berarti bagi lingkungan sekitar kita, meskipun kita sendiri mungkin sedang menghadapi tantangan.
+        </p>
+        <p>
+            Jadi, ketika kita menghadapi ulangan atau ujian dalam hidup, ingatlah bahwa kita memiliki potensi untuk tumbuh subur dan berkembang, bahkan di tengah kondisi yang paling menantang sekalipun. Dengan harapan dan ketekunan, kita dapat menjadi seperti pohon kurma dan aras, berdiri tegak, memberikan keteduhan, dan terus menghasilkan buah kehidupan.
+        </p>
+    </div>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/ayub-10-8">Ayub 10 8</a></li>
+<li><a href="/mazmur-64-3">Mazmur 64 3</a></li>
+<li><a href="/yehezkiel-16-43">Yehezkiel 16 43</a></li>
+<li><a href="/2-raja-raja-23-4">2 Raja Raja 23 4</a></li>
+<li><a href="/1-tawarikh-2-1">1 Tawarikh 2 1</a></li>
+<li><a href="/matius-21-39">Matius 21 39</a></li>
+<li><a href="/yudas-1-5">Yudas 1 5</a></li>
+<li><a href="/bilangan-15-5">Bilangan 15 5</a></li>
+<li><a href="/yeremia-13-12">Yeremia 13 12</a></li>
+<li><a href="/nehemia-3-18">Nehemia 3 18</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

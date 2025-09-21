@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 Tawarikh 1:34 - Keturunan Abraham</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #4CAF50; /* Hijau Cerah */
+            --secondary-color: #FFC107; /* Kuning Cerah */
+            --background-color: #E8F5E9; /* Hijau Muda Pucat */
+            --text-color: #212121; /* Abu-abu Gelap */
+            --heading-color: #388E3C; /* Hijau Tua */
+            --accent-color: #81C784; /* Hijau Lebih Terang */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Agar konten dimulai dari atas */
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 700px;
+            width: 100%;
+            background-color: #FFFFFF;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: var(--heading-color);
+            margin-bottom: 10px;
+            font-size: 2.2em;
+            font-weight: 700;
+        }
+
+        .verse-text {
+            font-size: 1.2em;
+            color: var(--primary-color);
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border: 3px solid var(--secondary-color);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h2 {
+            color: var(--heading-color);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+
+        .content p {
+            text-align: justify;
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: var(--secondary-color);
+        }
+
+        /* Media Queries untuk Responsivitas */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            .verse-text {
+                font-size: 1.1em;
+            }
+            .content h2 {
+                font-size: 1.5em;
+            }
+            .content p {
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.6em;
+            }
+            .verse-text {
+                font-size: 1em;
+            }
+            .content h2 {
+                font-size: 1.3em;
+            }
+            .content p {
+                font-size: 0.95em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>1 Tawarikh 1:34</h1>
+        <p class="verse-text">
+            Keturunan Abraham ialah Ishak. Anak-anak Ishak ialah 
+            <span style="font-weight: bold;">Esau</span> dan Israel.
+        </p>
+
+        <div class="content">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" aria-label="Ilustrasi Keturunan">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:var(--primary-color);stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:var(--secondary-color);stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <rect width="400" height="200" fill="var(--background-color)" rx="15" ry="15"/>
+                
+                <!-- Abraham -->
+                <circle cx="50" cy="50" r="25" fill="#f0ad4e" />
+                <text x="50" y="60" text-anchor="middle" fill="white" font-size="14px" font-weight="bold">Abraham</text>
+
+                <!-- Garis Keturunan -->
+                <line x1="50" y1="75" x2="50" y2="125" stroke="#ccc" stroke-width="2"/>
+                <circle cx="50" cy="100" r="5" fill="var(--accent-color)"/>
+
+                <!-- Ishak -->
+                <circle cx="50" cy="150" r="25" fill="#5cb85c" />
+                <text x="50" y="160" text-anchor="middle" fill="white" font-size="14px" font-weight="bold">Ishak</text>
+
+                <!-- Garis Keturunan Ishak -->
+                <line x1="50" y1="175" x2="120" y2="175" stroke="#ccc" stroke-width="2"/>
+                <line x1="120" y1="175" x2="120" y2="150" stroke="#ccc" stroke-width="2"/>
+                <circle cx="120" cy="150" r="5" fill="var(--accent-color)"/>
+
+                <line x1="50" y1="175" x2="180" y2="175" stroke="#ccc" stroke-width="2"/>
+                <line x1="180" y1="175" x2="180" y2="150" stroke="#ccc" stroke-width="2"/>
+                <circle cx="180" cy="150" r="5" fill="var(--accent-color)"/>
+
+                <!-- Esau -->
+                <circle cx="120" cy="125" r="20" fill="#f9f9f9" />
+                <text x="120" y="135" text-anchor="middle" fill="#333" font-size="12px">Esau</text>
+
+                <!-- Israel (Yakub) -->
+                <circle cx="180" cy="125" r="20" fill="#5bc0de" />
+                <text x="180" y="135" text-anchor="middle" fill="white" font-size="12px">Israel</text>
+            </svg>
+
+            <h2>Menelusuri Akar Keturunan</h2>
+            <p>
+                Ayat 1 Tawarikh 1:34 membuka lembaran sejarah bangsa Israel dengan menyoroti salah satu akar genealogi terpenting mereka: keturunan Abraham. Dalam silsilah yang panjang dan rumit yang tercatat dalam kitab Tawarikh, setiap nama memiliki cerita dan makna yang tersendiri. Ayat ini secara spesifik menyebutkan bahwa Ishak adalah anak dari Abraham. Ini adalah sebuah penegasan penting, mengingat peran sentral Ishak sebagai anak perjanjian yang dikorbankan dan kemudian dikembalikan kepada Abraham. Keturunan yang dijanjikan Allah akan datang melalui garis keturunan Ishak, bukan Ismail.
+            </p>
+            <p>
+                Lebih lanjut, ayat ini melanjutkan garis keturunan dengan menyatakan bahwa anak-anak Ishak adalah Esau dan Israel. Nama "Israel" di sini merujuk pada Yakub, putra Ishak yang lain, yang kemudian namanya diubah oleh Allah menjadi Israel setelah bergulat dengan malaikat (Kejadian 32:28). Perubahan nama ini bukan sekadar formalitas, melainkan penandaan identitas baru dan perjanjian yang diperbaharui. Yakub, yang dikenal karena kelicikannya namun juga ketekunan imannya, menjadi bapa leluhur dari kedua belas suku bangsa Israel.
+            </p>
+            <p>
+                Pentingnya ayat ini bukan hanya terletak pada pencatatan nama, tetapi pada pemahaman teologis. Dalam budaya kuno, silsilah adalah fondasi identitas dan kepemilikan. Dengan menelusuri keturunan kembali ke Abraham, kitab Tawarikh menegaskan kembali janji-janji Allah yang abadi kepada nenek moyang mereka. Janji bahwa keturunan Abraham akan menjadi bangsa yang besar dan diberkati oleh Allah. Ayat ini memberikan dasar bagi bangsa Israel untuk memahami siapa mereka, dari mana mereka berasal, dan kepada siapa mereka terikat dalam sebuah perjanjian ilahi.
+            </p>
+            <p>
+                Esau dan Israel, kedua putra Ishak, mewakili dua jalur yang berbeda namun saling terkait dalam sejarah. Esau, sang sulung, sering dikaitkan dengan bangsa Edom, sementara Israel (Yakub) adalah leluhur langsung dari dua belas suku. Meskipun demikian, perlu diingat bahwa kedua bersaudara ini pada awalnya memiliki hubungan yang kompleks, penuh dengan persaingan namun juga rekonsiliasi. Studi tentang ayat ini mengundang kita untuk merenungkan bagaimana rencana Allah seringkali bekerja melalui dinamika keluarga manusia, bahkan dengan segala ketidaksempurnaannya.
+            </p>
+            <p>
+                Kitab Tawarikh secara umum bertujuan untuk membangun kembali identitas dan iman bangsa Israel setelah pembuangan di Babel. Dengan menekankan garis keturunan dari Abraham, Tawarikh mengingatkan mereka akan kesetiaan Allah yang tak pernah berubah, serta warisan rohani yang kaya yang mereka miliki. Ayat 1 Tawarikh 1:34, meski singkat, adalah titik awal penting dalam memahami bagaimana sejarah keselamatan Allah terungkap melalui silsilah keluarga, menghubungkan masa lalu dengan masa kini, dan menawarkan harapan untuk masa depan. Ini adalah pengingat akan berkat yang mengalir melalui kesetiaan dan janji Allah yang kekal.
+            </p>
+        </div>
+    </div>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/keluaran-29-5">Keluaran 29 5</a></li>
+<li><a href="/kejadian-19-12">Kejadian 19 12</a></li>
+<li><a href="/ayub-21-27">Ayub 21 27</a></li>
+<li><a href="/hakim-hakim-7-24">Hakim Hakim 7 24</a></li>
+<li><a href="/kisah-rasul-rasul-7-21">Kisah Rasul Rasul 7 21</a></li>
+<li><a href="/kisah-rasul-rasul-22-13">Kisah Rasul Rasul 22 13</a></li>
+<li><a href="/nehemia-6-13">Nehemia 6 13</a></li>
+<li><a href="/yosua-21-6">Yosua 21 6</a></li>
+<li><a href="/1-tawarikh-7-17">1 Tawarikh 7 17</a></li>
+<li><a href="/yeremia-50-21">Yeremia 50 21</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

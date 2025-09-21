@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ulangan 28:56 - Janji dan Kutuk</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --color-primary: #20c997; /* Teal cerah */
+            --color-secondary: #66d9ef; /* Biru muda cerah */
+            --color-background: #f8f9fa; /* Abu-abu sangat terang */
+            --color-text: #343a40; /* Abu-abu gelap untuk teks */
+            --color-accent: #ffc107; /* Kuning untuk aksen */
+            --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family);
+            line-height: 1.7;
+            margin: 0;
+            padding: 20px;
+            background-color: var(--color-background);
+            color: var(--color-text);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Mulai dari atas */
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: #ffffff; /* Latar belakang konten putih */
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        h1 {
+            color: var(--color-primary);
+            font-size: 2em;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .verse-content {
+            font-style: italic;
+            color: var(--color-secondary);
+            font-size: 1.2em;
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 0 15px;
+        }
+
+        h2 {
+            color: var(--color-accent);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--color-primary);
+            padding-bottom: 5px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .svg-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            .verse-content {
+                font-size: 1.1em;
+            }
+            .container {
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.6em;
+            }
+            .verse-content {
+                font-size: 1em;
+                padding: 0;
+            }
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ulangan 28:56</h1>
+        <div class="verse-content">
+            "Dan perempuan yang lemah lembut dan yang biasa berhemat di tengah-tengah kamu, yang tidak biasa memijak-mijakkan telapak kakinya di bumi, karena kelembutan dan kehematannya, perempuan demikian akan memandang dengan dengki kepada suaminya, kepada anaknya laki-laki dan kepada anaknya perempuan,"
+        </div>
+
+        <div class="svg-container">
+            <svg width="100%" viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg" aria-labelledby="svgTitle">
+                <title id="svgTitle">Ilustrasi simbolis janji dan kutuk dalam Ulangan</title>
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:var(--color-primary);stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:var(--color-secondary);stop-opacity:1" />
+                    </linearGradient>
+                    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:var(--color-accent);stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#dc3545;stop-opacity:1" /> <!-- Merah untuk peringatan -->
+                    </linearGradient>
+                </defs>
+
+                <!-- Simbol Ketenangan/Kemakmuran (sebelumnya) -->
+                <g transform="translate(50, 50)">
+                    <circle cx="50" cy="50" r="40" fill="url(#grad1)" opacity="0.9"/>
+                    <path d="M 50 10 L 20 70 L 80 70 Z" fill="white" opacity="0.8"/>
+                    <text x="50" y="60" text-anchor="middle" font-size="12" fill="white" opacity="0.8">Aman</text>
+                </g>
+
+                <!-- Simbol Perpecahan/Kesulitan (setelahnya) -->
+                <g transform="translate(250, 50)">
+                    <rect x="10" y="10" width="80" height="80" fill="url(#grad2)" opacity="0.7"/>
+                    <text x="50" y="55" text-anchor="middle" font-size="12" fill="white" opacity="0.9">Sulit</text>
+                </g>
+
+                <!-- Panah yang menghubungkan -->
+                <path d="M 140 100 Q 200 120 250 100" stroke="var(--color-primary)" stroke-width="3" fill="none" marker-end="url(#arrowhead)" />
+                <path d="M 350 100 Q 400 120 450 100" stroke="var(--color-accent)" stroke-width="3" fill="none" marker-end="url(#arrowhead)" />
+
+                <!-- Simbol ketidaknyamanan emosional -->
+                <g transform="translate(450, 50)">
+                    <circle cx="50" cy="50" r="40" fill="var(--color-secondary)" opacity="0.6"/>
+                    <path d="M 35 35 L 65 65 M 35 65 L 65 35" stroke="white" stroke-width="4" />
+                    <text x="50" y="100" text-anchor="middle" font-size="10" fill="var(--color-text)">Dengki</text>
+                </g>
+
+                <!-- Tambahkan ujung panah -->
+                <defs>
+                    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="0" refY="5" orient="auto">
+                        <path d="M0,0 L10,5 L0,10" fill="var(--color-primary)" />
+                    </marker>
+                </defs>
+            </svg>
+        </div>
+
+        <p>
+            Ayat Ulangan 28:56 ini, yang berada dalam bagian kutuk dari perjanjian di Gunung Ebal dan Gerizim, menyajikan gambaran yang cukup suram mengenai dampak ketidaktaatan terhadap firman Tuhan. Ayat ini secara spesifik menyoroti kondisi kaum perempuan dalam masyarakat yang mengalami kehancuran akibat dosa. Frasa "perempuan yang lemah lembut dan yang biasa berhemat" menggambarkan sosok ideal perempuan pada masa itu, yang hidup dalam kondisi yang stabil, terjamin, dan tidak perlu berjuang keras untuk memenuhi kebutuhan dasar. Mereka tidak perlu "memijak-mijakkan telapak kakinya di bumi" dalam arti kiasan, yaitu tidak perlu bersusah payah dalam kehidupan sehari-hari.
+        </p>
+
+        <p>
+            Kondisi ini, yang seharusnya menjadi berkat dan tanda kemakmuran, dalam konteks Ulangan 28 justru menjadi kontras yang menyakitkan ketika Tuhan menarik berkat-Nya. Keadaan yang sebelumnya nyaman dan aman berubah menjadi sumber penderitaan emosional yang mendalam. Ayat ini mengatakan bahwa perempuan tersebut akan "memandang dengan dengki kepada suaminya, kepada anaknya laki-laki dan kepada anaknya perempuan." Dengki atau iri hati di sini bukanlah sekadar rasa cemburu biasa, melainkan sebuah kepedihan yang timbul dari ketidakmampuan untuk mempertahankan atau bahkan sekadar menikmati apa yang dulunya mereka miliki.
+        </p>
+
+        <h2>Implikasi dan Makna yang Lebih Dalam</h2>
+
+        <p>
+            Perikop Ulangan 28:56 ini memiliki beberapa implikasi penting. Pertama, ia menunjukkan betapa seriusnya Tuhan memandang ketaatan umat-Nya. Dampak dari ketidaktaatan tidak hanya bersifat fisik atau materiil, tetapi juga merusak tatanan sosial dan keharmonisan keluarga. Dalam ayat ini, kehancuran pribadi dan keluarga sangat terasa. Kebahagiaan yang seharusnya hadir dalam rumah tangga tergantikan oleh kepahitan dan ketidakpuasan.
+        </p>
+
+        <p>
+            Kedua, ayat ini menekankan kerentanan emosional yang dapat dialami, terutama dalam situasi krisis. Bagi perempuan yang biasa hidup dalam keadaan berkecukupan, melihat suaminya dan anak-anaknya menderita atau bahkan tidak memiliki apa-apa, tentu akan menimbulkan luka batin yang mendalam. Rasa iri hati bisa muncul karena mereka tidak bisa lagi memenuhi kebutuhan mereka sendiri atau bahkan hanya untuk sekadar menenangkan diri. Ini adalah gambaran tentang penderitaan dalam skala rumah tangga, yang mencerminkan kehancuran yang lebih luas yang menimpa seluruh bangsa jika mereka berpaling dari Tuhan.
+        </p>
+
+        <p>
+            Ketiga, penekanan pada perempuan yang "lemah lembut dan biasa berhemat" bisa juga diartikan sebagai gambaran tentang bagaimana konsekuensi dosa dapat merampas identitas dan nilai-nilai luhur. Sifat-sifat positif yang seharusnya dijaga justru menjadi sumber kepedihan ketika kondisi memaksa. Ini adalah pengingat bahwa kemakmuran dan kenyamanan material bukanlah jaminan kebahagiaan abadi, melainkan berkat yang bergantung pada hubungan yang benar dengan Pencipta. Ketika hubungan itu terputus, bahkan hal-hal yang paling berharga dalam hidup pun bisa menjadi sumber rasa sakit.
+        </p>
+
+        <p>
+            Oleh karena itu, Ulangan 28:56 bukan sekadar daftar kutuk, melainkan sebuah peringatan keras tentang pentingnya ketaatan yang tulus dan berkelanjutan. Ayat ini mengundang kita untuk merenungkan betapa berharganya berkat Tuhan, dan betapa berbahayanya berpaling dari jalan-Nya, yang dampaknya dapat merusak setiap aspek kehidupan, termasuk keharmonisan dan ketenangan batin dalam keluarga.
+        </p>
+    </div>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/ulangan-17-13">Ulangan 17 13</a></li>
+<li><a href="/kejadian-41-49">Kejadian 41 49</a></li>
+<li><a href="/yohanes-7-27">Yohanes 7 27</a></li>
+<li><a href="/ayub-19-6">Ayub 19 6</a></li>
+<li><a href="/2-raja-raja-10-18">2 Raja Raja 10 18</a></li>
+<li><a href="/yehezkiel-25-7">Yehezkiel 25 7</a></li>
+<li><a href="/mazmur-144-13">Mazmur 144 13</a></li>
+<li><a href="/ayub-40-22">Ayub 40 22</a></li>
+<li><a href="/yehezkiel-10-10">Yehezkiel 10 10</a></li>
+<li><a href="/bilangan-4-6">Bilangan 4 6</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

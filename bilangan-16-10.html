@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilangan Desimal dan Heksadesimal: 16 vs 10</title>
+    <link rel="icon" href="/favicon.svg">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #e0f7fa; /* Warna latar belakang sejuk */
+            color: #004d40; /* Warna teks utama yang sejuk */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #00796b; /* Warna judul yang cerah */
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+        .ayat {
+            text-align: center;
+            font-style: italic;
+            color: #00695c; /* Warna teks ayat yang sedikit berbeda */
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+        h2 {
+            color: #00796b;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #e0f7fa;
+            padding-bottom: 5px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #00796b;
+        }
+        .code-block {
+            background-color: #f0f8ff; /* Warna latar kode yang lembut */
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto; /* Untuk memastikan kode yang panjang tetap terlihat */
+            margin-bottom: 15px;
+        }
+        .code-block code {
+            font-family: 'Consolas', 'Monaco', 'Andale Mono', 'Ubuntu Mono', monospace;
+            font-size: 0.95em;
+            color: #004d40;
+        }
+        img {
+            display: block;
+            margin: 25px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+        }
+        .caption {
+            text-align: center;
+            font-size: 0.9em;
+            color: #00695c;
+            margin-top: -15px;
+            margin-bottom: 20px;
+        }
+
+        /* Responsif untuk layar kecil */
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            .ayat {
+                font-size: 1em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            .code-block code {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Perbedaan Fundamental: Bilangan Desimal (10) dan Heksadesimal (16)</h1>
+        <p class="ayat">"Dan Dia mengajarkan kepada Adam nama-nama (benda) seluruhnya..." (QS Al-Baqarah: 31)</p>
+
+        <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="45" fill="#80deea" stroke="#00796b" stroke-width="3"/>
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="20" font-weight="bold" fill="#004d40">10 | 16</text>
+        </svg>
+        <p class="caption">Representasi visual perbandingan basis bilangan.</p>
+
+        <p>Dalam dunia komputasi dan matematika, kita seringkali dihadapkan pada berbagai sistem bilangan. Dua di antaranya yang paling sering ditemui adalah sistem bilangan desimal (basis 10) dan sistem bilangan heksadesimal (basis 16). Meskipun keduanya adalah cara untuk merepresentasikan kuantitas, perbedaan mendasar pada basisnya menghasilkan cara kerja dan penerapan yang unik. Memahami perbedaan ini sangat krusial, terutama bagi mereka yang berkecimpung dalam pengembangan perangkat lunak, jaringan, atau bidang teknis lainnya.</p>
+
+        <h2>Sistem Bilangan Desimal (Basis 10)</h2>
+        <p>Sistem bilangan desimal adalah sistem yang kita gunakan sehari-hari. Sistem ini memiliki sepuluh digit unik: 0, 1, 2, 3, 4, 5, 6, 7, 8, dan 9. Setiap posisi angka dalam bilangan desimal memiliki nilai tempat yang merupakan pangkat dari 10. Misalnya, bilangan 123 dapat diuraikan sebagai:</p>
+        <div class="code-block">
+            <code>(1 * 10^2) + (2 * 10^1) + (3 * 10^0) = 100 + 20 + 3 = 123</code>
+        </div>
+        <p>Kelebihan utama sistem desimal adalah intuisi dan kemudahannya untuk dipahami oleh manusia karena sudah terintegrasi dalam kehidupan sehari-hari kita. Namun, dalam konteks komputasi, representasi bilangan desimal yang besar seringkali membutuhkan lebih banyak bit memori dibandingkan dengan representasi heksadesimal yang setara, yang dapat berdampak pada efisiensi.</p>
+
+        <h2>Sistem Bilangan Heksadesimal (Basis 16)</h2>
+        <p>Sistem bilangan heksadesimal, atau sering disingkat 'hex', menggunakan enam belas simbol unik. Sepuluh simbol pertama sama dengan desimal (0-9), namun untuk enam simbol berikutnya, digunakan huruf dari A hingga F. Huruf-huruf ini memiliki nilai sebagai berikut:</p>
+        <div class="code-block">
+            <code>A = 10, B = 11, C = 12, D = 13, E = 14, F = 15</code>
+        </div>
+        <p>Sama seperti desimal, setiap posisi angka dalam bilangan heksadesimal memiliki nilai tempat yang merupakan pangkat dari 16. Contohnya, bilangan heksadesimal 1A3 dapat diuraikan sebagai:</p>
+        <div class="code-block">
+            <code>(1 * 16^2) + (A * 16^1) + (3 * 16^0) = (1 * 256) + (10 * 16) + (3 * 1) = 256 + 160 + 3 = 419 (dalam desimal)</code>
+        </div>
+        <p>Mengapa heksadesimal begitu populer di dunia komputer? Alasan utamanya adalah kemampuannya untuk merepresentasikan bilangan biner (basis 2) dengan cara yang jauh lebih ringkas. Setiap digit heksadesimal dapat merepresentasikan tepat empat digit biner (nibble). Ini karena 2^4 = 16.</p>
+        <p>Sebagai contoh:</p>
+        <ul>
+            <li>Bilangan biner <code>1010</code> setara dengan heksadesimal <code>A</code>, yang setara dengan desimal <code>10</code>.</li>
+            <li>Bilangan biner <code>0001</code> setara dengan heksadesimal <code>1</code>, yang setara dengan desimal <code>1</code>.</li>
+            <li>Jadi, bilangan biner <code>10100001</code> (desimal 161) dapat dipecah menjadi <code>1010</code> dan <code>0001</code>, yang secara heksadesimal menjadi <code>A1</code>.</li>
+        </ul>
+        <p>Dengan demikian, sebuah byte (8 bit) yang dalam biner bisa terlihat sangat panjang dan rumit, dapat direpresentasikan hanya dengan dua digit heksadesimal. Misalnya, bilangan biner <code>11111111</code> (desimal 255) dapat direpresentasikan sebagai <code>FF</code> dalam heksadesimal. Perbandingan ini sangat membantu programmer dalam membaca dan menulis kode yang melibatkan alamat memori, nilai register, atau data mentah lainnya.</p>
+
+        <h2>Kesimpulan</h2>
+        <p>Perbandingan antara bilangan desimal (basis 10) dan heksadesimal (basis 16) menunjukkan bagaimana sistem bilangan yang berbeda dapat memiliki kegunaan yang spesifik. Desimal adalah standar kita untuk komunikasi sehari-hari, sementara heksadesimal menawarkan cara yang ringkas dan efisien untuk merepresentasikan data biner, menjadikannya alat yang tak ternilai dalam dunia pemrograman dan ilmu komputer. Memahami konversi dan hubungan antara kedua sistem ini adalah langkah penting bagi siapa saja yang ingin mendalami seluk-beluk cara kerja komputer.</p>
+    </div>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/kejadian-44-30">Kejadian 44 30</a></li>
+<li><a href="/yeremia-42-2">Yeremia 42 2</a></li>
+<li><a href="/keluaran-39-4">Keluaran 39 4</a></li>
+<li><a href="/lukas-22-57">Lukas 22 57</a></li>
+<li><a href="/yeremia-20-2">Yeremia 20 2</a></li>
+<li><a href="/yosua-10-10">Yosua 10 10</a></li>
+<li><a href="/1-tawarikh-16-30">1 Tawarikh 16 30</a></li>
+<li><a href="/kisah-rasul-rasul-15-16">Kisah Rasul Rasul 15 16</a></li>
+<li><a href="/keluaran-18-25">Keluaran 18 25</a></li>
+<li><a href="/1-raja-raja-14-8">1 Raja Raja 14 8</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>
